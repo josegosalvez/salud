@@ -1,24 +1,21 @@
+import React, {useEffect} from 'react';
+import { collection, getDocs } from "firebase/firestore";
+import { ChatProvider } from './context/chat';
+import db, {AuthProvider} from './firebase/firebaseConfig';
 import logo from './logo.svg';
 import './App.css';
+import AppRoutes from './rutas/AppRoutes';
+//import  {AuthProvider} from "./context/auth"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthProvider>
+      <ChatProvider>
+      <AppRoutes>
+        
+      </AppRoutes>
+      </ChatProvider>
+    </AuthProvider>
   );
 }
 
