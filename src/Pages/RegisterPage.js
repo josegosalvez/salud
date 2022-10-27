@@ -77,6 +77,10 @@ const RegisterPage = () => {
             Tienes cuenta? Inicia sesion {' '}
             <Link to='/admin/login'>Haz click aqui.</Link>
         </p>
+        <p>
+            Para ir a la pagina prinipal. {' '}
+            <Link to='/'>Haz click aqui.</Link>
+        </p>
     </div>
   )
 };

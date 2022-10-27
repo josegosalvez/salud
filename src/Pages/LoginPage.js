@@ -74,6 +74,10 @@ const LoginPage = () => {
             Si no tienes cuenta registrate. {' '}
             <Link to='/admin/register'>Haz click aqui.</Link>
         </p>
+        <p>
+            Para ir a la pagina prinipal. {' '}
+            <Link to='/'>Haz click aqui.</Link>
+        </p>
     </div>
   );
 };

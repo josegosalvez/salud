@@ -31,9 +31,7 @@ const MainChat = () => {
   }
 
   if (loading) {
-      //if(chatData > 0){
         return <div className='container'>Loading chat...</div>
-      //}
   }
 
   const chatHistory = chatData.length > 0 ? chatData.sort((a,b) => {

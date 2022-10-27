@@ -54,9 +54,9 @@ export const ChatProvider = ({children}) => {
                 if(doc.exists()){
                     tempChatData.push({id: doc.id, ...doc.data()});
                     setChatData([...tempChatData]);
-                    setLoading(false);
                 }
             });
+            setLoading(false);
             scrollLastMessage();
         } catch (error) {
             console.error("Error obteniendo el historial", error);
