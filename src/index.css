@@ -3,11 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font-sans);
+  
 }
 
 :root{
-  --container: min(100% - 2, 50rem);
-  --center: auto;
+  /*--container: min(100% - 2, 50rem);
+  --center: auto;*/
 }
 
 .flex{
@@ -39,20 +40,91 @@ nav{
   border-bottom: 1px solid var(--violet-9);
 }
 
-.container{
-  width: var(--container);
-  margin: var(--center);
-  padding: var(--size-4);
-}
+/*Probando a ver si consigo que esto este centrado*/
 
-
-input{
-  border: 1px solid var(--violet-9);
-  border-radius: var(--size-1);
-  padding: var(--size-2);
-  margin: var(--size-3) 0;
+.form {
   width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  background-color: rgba(97, 47, 97, 0.904);
+  
 }
+
+.form input {
+  width: 95%;
+  height: 30px;
+  margin: 0.5rem;
+  border-radius: var(--size-2);
+
+}
+
+.form Recuadro-Login {
+  padding: 0.5em 1em;
+  border: none;
+  background: rgba(97, 47, 97, 0.904);
+  cursor: pointer;
+}
+
+.Recuadro-Login{
+  background-color: #a7bcff;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  max-width: 400px;
+}
+
+.text-center{
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(97, 47, 97, 0.904);
+  width: 100%;
+  max-width: 400px;
+  border-top-left-radius: var(--size-4);
+  border-top-right-radius: var(--size-4);
+}
+
+.temporal{
+  text-align: left;
+  margin: 0 auto;
+  background-color: rgba(97, 47, 97, 0.904);
+  width: 100%;
+  max-width: 400px;
+  border-bottom-left-radius: var(--size-4);
+  border-bottom-right-radius: var(--size-4);
+  color: white;
+}
+
+/*
+.container{
+
+  margin-top: 10%;
+  margin-left: 40%;
+  margin-right: 30%;
+  background-color: rgba(92, 11, 85, 0.651);
+  border-radius: 5%;
+  width: 400px;
+}
+
+
+.Recuadros{
+  border: 2px solid var(--violet-9);
+  border-radius: var(--size-2);
+  padding: var(--size-2);
+  width: 30%;
+  text-align: left;
+  
+}
+
+
+*/
 
 
 
@@ -147,6 +219,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #a7bcff;
 }
 
 code {

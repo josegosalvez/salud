@@ -43,11 +43,12 @@ const LoginPage = () => {
 
   return (
     <div className='container'>
-        <h2 className='text-center'>Inicia sesion para chatear</h2>
-        <form 
+        <h3 className='text-center'>Inicia sesion</h3>
+        <form className='form'
             onSubmit={handleSubmit}>
-            <div>
+                
                 <input
+                    className='Recuadros'
                     type='text'
                     name='email'
                     placeholder='Email'
@@ -55,9 +56,9 @@ const LoginPage = () => {
                     onChange={handleInputChange}
                     >
                 </input>
-            </div>
-            <div>
+            
                 <input
+                    className='Recuadros'
                     type='new-password'
                     name='password'
                     placeholder='Password'
@@ -66,17 +67,18 @@ const LoginPage = () => {
                     >
 
                 </input>
-            </div>
-            {error && <p className='alert-error'>{message}</p>}
-            <input type="submit" value={loading ? 'Validando...' : "Login"}/>
+            
+                {error && <p className='alert-error'>{message}</p>}
+                <input className='Recuadro-Login' type="submit" value={loading ? 'Validando...' : "Login"}/>
         </form>
-         <p>
+         <p className='temporal'>
             Si no tienes cuenta registrate. {' '}
-            <Link to='/admin/register'>Haz click aqui.</Link>
-        </p>
-        <p>
+            <Link to='/admin/register'>Haz click aqui.</Link> <br></br>
             Para ir a la pagina prinipal. {' '}
             <Link to='/'>Haz click aqui.</Link>
+        </p>
+        <p className='temporal'>
+            
         </p>
     </div>
   );

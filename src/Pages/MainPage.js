@@ -8,7 +8,7 @@ import { AuthContext } from '../firebase/firebaseConfig';
 
 const MainPage = () => {
     return(
-        <div className='container'>
+        <div className='containerMainPage'>
             <h2 className='text-center'>Pagina Principal</h2>
             <p>
                 Primero que todo haz login. {' '}

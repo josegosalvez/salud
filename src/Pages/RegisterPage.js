@@ -46,10 +46,10 @@ const RegisterPage = () => {
 
   return (
     <div className='container'>
-        <h2 className='text-center'>Registrate para chatear</h2>
-        <form
+        <h3 className='text-center'>Registrarse</h3>
+        <form className='form'
             onSubmit={handleSubmit}>
-            <div>
+                
                 <input
                     type='text'
                     name='email'
@@ -58,8 +58,7 @@ const RegisterPage = () => {
                     onChange={handleInputChange}
                     >
                 </input>
-            </div>
-            <div>
+
                 <input
                     type='new-password'
                     name='password'
@@ -69,17 +68,18 @@ const RegisterPage = () => {
                     >
 
                 </input>
-            </div>
+            
             {error && <p className='alert-error'>{message}</p>}
-            <input type="submit" value={loading ? 'Validando...' : "Registrarse"}/>
+            <input className='Recuadro-Login' type="submit" value={loading ? 'Validando...' : "Registrarse"}/>
         </form>
-        <p>
+        <p className='temporal'>
             Tienes cuenta? Inicia sesion {' '}
-            <Link to='/admin/login'>Haz click aqui.</Link>
-        </p>
-        <p>
+            <Link to='/admin/login'>Haz click aqui.</Link><br></br>
             Para ir a la pagina prinipal. {' '}
             <Link to='/'>Haz click aqui.</Link>
+        </p>
+        <p>
+            
         </p>
     </div>
   )
