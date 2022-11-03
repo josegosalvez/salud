@@ -3,9 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../firebase/firebaseConfig';
 import { ChatContext } from '../context/chat';
 import Moment from 'react-moment';
+import Sidebar from '../chat-Components/Sidebar';
+import Chat from '../chat-Components/Chat';
 
 const MainChat = () => {
-  const navigate = useNavigate();
+  /*const navigate = useNavigate();
   const {user, persisUser, signOut} = useContext(AuthContext);
   const [messageToSave, setMessageToSave] = useState("");
   const {sendMessage, getChatHistory, chatData, loading, updateChatHistory} = useContext(ChatContext);
@@ -45,8 +47,9 @@ const MainChat = () => {
                 <p onClick={signUserOut} className='sign-out'>Sign out</p>
             </div>
             <div className='chat'>
+            */
                 {/*usuario chat*/ }
-                {chatHistory ? chatHistory.map((c) =>{
+                /*{chatHistory ? chatHistory.map((c) =>{
                    return c.from == user.email ? (
                         <div key={c.time} className='user-chat'>
                             <div className='chat-info'>
@@ -82,6 +85,19 @@ const MainChat = () => {
             </form>
         </div>
     </div>
+    */
+    return (
+        <div className='Main-Chat'>
+            <div className='container'>
+                <Sidebar>
+
+                </Sidebar>
+                <Chat>
+                    
+                </Chat>
+            </div>
+        </div>
+
   )
 };
 
